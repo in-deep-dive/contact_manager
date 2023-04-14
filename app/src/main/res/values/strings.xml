@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">day20</string>
+    <string name="password">Password</string>
+    <string name="login">Login !</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="sing_in">sing_in</string>
+    <string name="all_ready_sing_in">All Ready Sing_in?</string>
+    <string name="singin">sing_in</string>
+    <string name="user_name">User Name</string>
+    <string name="search_hint">search_hint</string>
+</resources>
