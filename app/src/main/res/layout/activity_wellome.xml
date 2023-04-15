@@ -1,29 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical">
 
-    <!-- Toolbar -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/purple_200"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    <TextView
+        android:id="@+id/addconact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:text="Add Contact"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
-    <!-- Search bar -->
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/search_view"
+    <EditText
+        android:id="@+id/PersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:iconifiedByDefault="false"
-        android:queryHint="@string/search_hint" />
+        android:background="@color/purple_500"
+        android:hint="@string/user_name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:padding="10dp" />
 
-    <!-- Contact list -->
-    <ListView
-        android:id="@+id/contact_list"
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:hint="Phone Number  "
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:id="@+id/phonenumber"
+        android:padding="10dp"
+        android:drawableStart="@drawable/baseline_phone_24"
+        android:drawablePadding="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:background="@color/purple_500"
+        android:hint="@string/add"
+        android:textColor="@color/white"
+        />
+
 
 </LinearLayout>

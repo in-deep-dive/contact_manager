@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             }.addOnSuccessListener {
                 Toast.makeText(this , "user Register fail" , Toast.LENGTH_SHORT).show()
             }
+            val  wellcome = Intent(this, Wellome::class.java)
+            startActivity(wellcome)
+
         }
         binding.allreadysingin.setOnClickListener {
             val opnenewlogin = Intent(this,  login::class.java)
